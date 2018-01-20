@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/1.8/ref/settings/
 """
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
-import os
+import os, configparser
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -55,7 +55,7 @@ ROOT_URLCONF = 'opengalactica.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -74,12 +74,19 @@ WSGI_APPLICATION = 'opengalactica.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.8/ref/settings/#databases
 
+config = configparser.ConfigParser()
+config.read('opengalactica.ini')
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': config["DATABASE"]["NAME"],
+        'USER': config["DATABASE"]["USER"],
+        'PASSWORD': config["DATABASE"]["PASSWORD"],
+        'HOST': 'localhost',
     }
 }
+
 
 
 # Internationalization
