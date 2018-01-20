@@ -1,0 +1,138 @@
+﻿+++DISCLAIMER+++
+A dokumentum -work in progress-, még sokat fog változni, blablabla. A "Lehetséges változtatások / fejlesztések:" címszónál minden alkalommal LEHETSÉGES módosításokról, puszta ÖTLETEKRŐL van szó, ezek implementálása csak megbeszélés után történik. Minden visszajelzésért hálásak vagyunk.
+
+
++++ALAPOK+++
+Fő célkitűzés nem az eredeti játék teljes lemásolása, hanem annak hangulatának, játékélményének újraalkotása, ahol csak lehetséges, ott javítva az eredeti koncepción.
+
+A játék alapjai változatlanok:
+> A játék fordulókból áll.
+> A játékosok pontszámmal rendelkeznek, melynek túlnyomó részét a flottájuk teszi ki.
+> A flották nyersanyagból vásárolhatóak.
+> A nyersanyagot roidok (plazmatorok) fejlesztik, körönként.
+> Plazmator nyersanyagból lőhető fel, vagy lopható más játékosoktól.
+> 1 óra 1 kör, körváltó egészkor van.
+> A játékosok szövetségekbe szerveződhetnek.
+> A játék fő célja a szövetségek pontszám alapján történő versenye.
+
+
++++JÁTÉKTÉR FELÉPÍTÉSE+++
+A játék képzelt univerzuma rendszerekből, azon belül galaxisokból, azon belül planétákból áll.
+> Az univerzumon belül gyakorlatilag végtelen rendszer van.
+> Egy rendszer 10 galaxist tartalmaz.
+> Egy galaxis 10 planétát tartalmaz.
+
+___Lehetséges változtatások / fejlesztések:
+> Mivel nonprofit játék, a korábban kreditért vásárolható funkciók (szövetségi galaxis vásárlása, planéta áthelyezése) megvásárolhatóak a saját, vagy szövetségi kincstárból, nyersanyagból.
+> Rendszerek bővítése plusz galaxisokkal
+>> Az árak exponenciálisan növekednének, így az első néhány után abszolút nem érné meg.
+>> Cél a 100 fő feletti szövetségek ellátása galaxissal. Így a kezdeti időkben tudnának mondjuk 12-13 galaxissal rendelkezni, később, amikor már életképessé válik a 100 fő feletti rész, akkor el tudnak költözni egy új rendszerbe. Így a 100-as határ elérése nem jelentene akkora hátrányt.
+
+
++++NYERSANYAG ÉS PLAZMATOROK+++
+> Három nyersanyag létezik, fém - kristály - narion.
+> Ezeket plazmatorok (roidok) termelik.
+>> Hivatalos elnevezésnek a plazmatort ajánlanám.
+> Plazmatort fellőni minden planéta tud, 99-esével.
+> A planéta aktuális plazmatormennyiségétől függ, hogy a fellőtt 99 plazmatorból hány aktivizálódik (hányat talál).
+>> Ez a szám exponenciálisan csökken, így rövid időn belül jobban megéri plazmatort lopni, mint újat fellőni.
+> A fellövés nem kerül pénzbe, csak le kell gyártani a plazmatorokat (szondák), és a hordozórakétát.
+> A plazmator fellövés után inaktív állapotba kerül.
+> Az aktivizálás (behúzás) fémbe kerül.
+>> A fémköltség exponenciálisan nő, minél több plazmatorral rendelkezik a planéta.
+
+___Lehetséges változtatások / fejlesztések:
+
+
++++FAJOK+++
+A faj hajóinak jellemzése minden esetben ár / érték arányban történik. A változtatások / fejlesztések részben szereplő dolgok megvalósulhatnak akár planétafejlesztés hatására is (lásd: teljesen újragondolt fejlesztési rendszer valamikor később a doksiban).
+
+HUMAN:
+> Masszív hajók, nagy sebzés, jó célpont kiosztás.
+> Lopó osztály: cirkáló.
+> Alapból kölünlegességgel nem rendelkezett a faj, zúzott, és kész, ennyit tudott.
+___Lehetséges változtatások / fejlesztések:
+> Gyorsabb TP gyűjtés.
+> A plazmator fellövés és behúzás görbéje enyébb, könnyebb plazmatort behúzni mint a többi fajjal.
+
+SHIN:
+> Sebezhető, de vállalható sebzéssel rendelkező hajók, rossz célpontkiosztással.
+> Másodlagosan gyegébb hajók összlövéssel.
+> Lopó osztály: romboló.
+> Különlegesség: a flották létszáma nem olvasható az ellenfél számára, 0-t jelez az állapotjelzőn (láthatatlanság). A szondák pontatlan flottaadatokat adnak vissza.
+___Lehetséges változtatások / fejlesztések:
+> Alternatív lopóosztály: naszád.
+>> Ez rengeteg érdekes trükkre adna lehetőséget a shin fajjal. Romboló idejű flottát indítani, naszádokkal telerakva, vagy a flottacserés taktika továbbfejlesztésére.
+>> TP-limitált fejlesztésként valósítanám meg, egy igen késői és drága fejlesztésként. Cél az lenne, hogy forduló végére a shin játékosok 10-15 százaléka rendelkezzen a fejlesztéssel.
+
+DIGITROX:
+> 1 körrel lassabb hajók, mint a többi faj.
+> Gyenge sebzés, masszív, de drága hajók. Közel használhatatlan célpontkiosztás.
+> Lopó osztály: romboló.
+> Különlegesség: Extra erős PVR rendszer.
+___Lehetséges változtatások / fejlesztések:
+> Lopó osztály megváltoztatása csatahajóra (fejlesztés nélkül, az egész fajt érintené).
+> Lopóhajó és nyersanyag lopó hajó kombinálása egy hajóba.
+> Másodlagos hajók, melyek nem lőnek, hanem gyógyítanak.
+>> Nagyon rossz célpontkiosztással a lelőtt saját hajókból következő körre újraépítenek néhányat.
+
+KHADUUI:
+> Gyenge, törékeny hajók.
+> Lopó osztály: naszád.
+> Különlegesség: Blokkoló hajók, melyek sebzést nem okoznak, de kiblokkolják a csatából az ellenséget. Nagyon hatékony, de nem tesz kárt a másikban. 
+___Lehetséges változtatások / fejlesztések:
+> Roidblokk: A lopóhajó a megmaradt roidok termelését blokkolja az adott planétán, a csata után még néhány körig. Kb. másfélszer annyi roid blokkolása lehetséges, mint amennyi ellopott a játékos.
+
+PIRAATI:
+> Törékeny, de jó sebzésű hajók.
+> Lopó osztály: naszád.
+> Az átlagosnál 1 körrel gyorsabb flották.
+> Különlegesség: A lelőtt hajók bizonyos százalékát ellopják, ami a csata után a saját flottályukba kerül.
+___Lehetséges változtatások / fejlesztések:
+> A hajólopáshoz egy fajspecifikus formációt hoznék létre. Ez lenne a csáklyázó formáció. Ha a kalóz megcsáklyázza az ellenséges flottát, akkor minden lelőtt hajót el tud lopni tőle, de cserébe sérülékenyebb, hajói pedig utolsónak lőnek.
+>> Ez stratégiailag erősítene a kalóz védők helyzetén, ami az eredeti játékban a 15.-16. fordulótól kezdve már igen gyengének számított, jelentősége eltörpült a khaduui és humán kombó mellett.
+>> Lenne értelme ész nélkül túlvédeni mindenhol kalózzal.
+>> A "high risk high reward" játékstílust jutalmazná, ami szerintem a faj lényege. Sokkal veszélyesebb, könnyű égni, nagyon könnyű lezúzni (hazakísérni) az ilyen formációban repülő flottákat, de cserébe ha sikeres a taktika, akkor gyorsan meg tudja szedni magát a kalóz védő.
+
+ZYK:
+> Rengeteg, nagyon olcsó, nagyon gyenge hajó. Jó célpontkiosztás, ár / érték arányban néhány nagyon erős hajó.
+> Lopó osztály: fregatt.
+___Lehetséges változtatások / fejlesztések:
+> A faj mechanikáját a fajspecifikus fejlesztésekkel bővíteném.
+>> A zyk fejlesztések nagy része "specializáció" lenne. 
+>> Ez azt jelenti, hogy bizonyos hajóosztályok, vagy bizonyos fajok ellen fejleszthetnék magukat a zyk játékosok. A fejlesztések között választani kéne, nem lehetne "kimaxolni" az összes fejlesztést egyszerre.
+>> Egyszerű példa: kiválasztott faj ellen +5% sebzést kapnak a zyk hajók. Ebből csak 1 faj lehet aktív egyszerre.
+>> Így a zyk játékosok specializálódhatnak 1-1 játékostípus ellen.
+> Lehetséges specializációk: faj ellen, hajótípus ellen, bizonyos pontszám ellen (sajátnál kisebb / nagyobb), esetleg szövetségi ranggal / galaxis ranggal rendelkezők ellen, idegen / baráti planétán?
+
+
++++SZÖVETSÉGEK RENDSZERE+++
+> Szövetséget alapítani bárki tud.
+> Szövetségi létszámlimit nincs, és soha nem is lesz.
+> A szövetségek despotikus rendszerűek, a főparancsnok teljhatalommal rendelkezik, teljes hozzáférése van mind a tagság kezeléséhez, mind a kincstárhoz, mind a belső fórum moderálásához.
+> A szövetség kincstárral rendelkezik, melybe adó, vagy beutalások útján kerül a nyersanyag. 
+> A szövetség belső fórummal rendelkezik, melyet csak a szövetség tagjai láthatnak.
+
+SZÖVETSÉGI RANGOK (régiek, és újak egyben, mögöttük zárójelben, hogy egy szövetségben hány lehet belőlük):
+> Főparancsnok(1): Superuser, minden jogosultsággal.
+> Parancsnok(3): Tagokat vehet fel, illetve távolíthat el, tagság rangját változtathatja. Támadást, védelmet tud szervezni, és diplomáciát tud kezelni.
+> Hadügyminiszter(3): Támadást és védelmet tud kezelni, ezek szervezése a feladata.
+> Propagandaminiszter(3): A régi fórumadminisztrátor. A fórumon kívül a szövetség propaganda felületének a kezelése, szerkesztése is feladata, s van hozzá jogosultsága (propagandáról később).
+> Diplomata(1): Diplomáciát tud kezelni, s ebben merül ki a feladata is.
+> Kincstárnok(3): A kincstárat tudja kezelni.
+> Tárca nélküli miniszter(3): Külön jogokkal nem rendelkező tag, akit mégis valami miatt az fpk ki akar emelni az egyszerű szövetségi tagok közül. Egyfajta jelzés értékű rang, mindenféle kiváltság nélkül.
+
+___Lehetséges változtatások / fejlesztések:
+> Látható, hogy az új rangokkal 17-re nő a szövetségen belül tisztséget betöltő játékosok száma. Erre a növelésre a játékélmény növelése érdekében volt szükség. Emellett galaxison belül is betölthetnek a játékosok galpk illetve galhm szerepeket, a szövetségen belül pedig vannak kiemelt védők, támadók, szondászok, stb. Ezt arra a design döntésre alapozom, hogy a játékosok számára unalmas lehet egyszerű mezei szövetségi tagnak lenni, 140 másik szövetségi taggal egyetemben. Mindenki szeretne egy kicsikét különleges lenni, egy kicsit több lenni, mint az átlag bokorugró. A szövetségi rangok számának növelésével több játékos elégedettségét növelhetjük (konkrétan ez a célja a tárca nélküli miniszter pozíciónak) - de szükséges is volt szerintem pár új tisztség bevezetése.
+>> 100 fő fölötti szövetségnél szívem szerint még tovább növelném a rangokat, az összes rangot további +1-el bővíteném. És ezt megismételném minden újabb 100 szövetségi tagnál.
+
+
++++DIPLOMÁCIA+++
+A diplomácia képernyő, és a teljes rendszer átdolgozása elengedhetetlen szerintem. Az eredeti rendszer legjobb eleme az volt, hogy a kötött egyezségeket egyáltalán nem volt kötelező betartani - csak hát aki diplót szegett, azt épp ezért mélyen lenézte a teljes univerzum. A rendszer ezen alapja változatlan lenne, viszont néhány felhasználóbarát újítás szükséges.
+Két szövetség között a következő állapotok állhatnak fenn (régi és új lehetőségek egyben kerülnek felsorolásra):
+> Nemezis: Az elmúlt 168 órában folyamatosan, legalább 6 óránként volt ellenséges flottacsapódás a két szövetség között. Az ilyen állapotban lévő szövetségek képtelenek módosítani a szövetségi állapotukon 168 órán keresztül (tehát ha megszűnik az ellenségeskedés, onnantól számítva 168 óráig). A nemeziseik ellen a szövetségek (szövetségi fejlesztés elvégzése után) bónuszokat kaphatnak! Az egyetlen szövetségi típus, amit a szövetségi vezetők nem módosíthatnak, és a rendszer magától állítja be.
+> Háború: Azon szövetségek közötti állapot, amik háborúban állnak egymással, de még nem érték el a nemezis szintet. A nemezis szint ide vált vissza automatikusan, ha nincs ellenséges flottacsapódás a két szövetség között. Ez a szint már szabadon módosítható a szövetségi vezetők által.
+> Tűzszünet: Ideiglenes tűzszünet, melyet nem illik(!) megszegni. Csak bizonyos időközre állítható be, maximum 168 órára. Utána - ha a szövetségi vezetők nem egyeztek meg másban - automatikusan háborúra áll vissza.
+> Semlegesség: A két szövetség között semmiféle diplomáciai kapcsolat nincs.
+> 
+> 
