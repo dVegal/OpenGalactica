@@ -1,4 +1,4 @@
-![alt text](https://github.com/hmikihth/OpenGalactica/Screenshot_20200609_145743.jpg "Open Source GalacticaX Fork")
+![alt text](https://github.com/hmikihth/OpenGalactica/blob/master/Screenshot_20200609_145743.jpg "Open Source GalacticaX Fork")
 
 # OpenGalactica
 
