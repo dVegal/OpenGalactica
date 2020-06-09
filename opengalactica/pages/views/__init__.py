@@ -15,3 +15,20 @@ class BaseView():
         return self.call(request, *args, **kwargs)
 
 from .home import *
+from .intro import *
+from .dictionary import *
+from .enciklopedia import *
+from .history import *
+from .impressum import *
+from .jobs import *
+from .logout import *
+from .main import *
+from .news import *
+from .registration import *
+from .rules import *
+from .xtendlogin import *
+from .screens import *
+from .ships import *
+from .species import *
+from .terms import *
+from .universe import *
